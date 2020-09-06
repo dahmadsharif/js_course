@@ -1,0 +1,13 @@
+Topics
+1. Let vs Var
+2. Use strict
+3. console.log('test');
+4. console.clear();
+5. console.time()
+
+
+
+var and let are both used for variable declaration in javascript but the difference between them is that var is function scoped and let is block scoped.
+
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let

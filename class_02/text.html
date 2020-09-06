@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+
+	<link rel="stylesheet" href="../assets/bootstrap.css">
+</head>
+<body>
+	<div class="container">
+		<div>
+			<h2 id="title">Javascript Language</h2>
+
+			<button class="btn btn-primary" onClick="getRed()">Make it Red</button>
+		</div>
+	</div> <!-- End  -->
+
+
+<script>
+	var x = document.getElementById("title");
+		x.style.color = 'green';
+
+	function getRed() {
+		x.style.color = 'red';
+	}
+</script>
+</body>
+</html>
