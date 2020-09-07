@@ -1,9 +1,12 @@
+https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps
+
 Topics
 1. Let vs Var
 2. Use strict
 3. console.log('test');
 4. console.clear();
 5. console.time()
+6. LocalStorage
 
 
 
@@ -11,3 +14,69 @@ var and let are both used for variable declaration in javascript but the differe
 
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let
+
+
+
+
+
+Javascript Data Type?
+String
+Number
+Array
+Object
+null
+Symbol
+Boolean
+
+
+Mutable and Immutable data type
+
+
+Javascript hoisting
+Let Vs var Vs const
+
+
+
+Primitive values
+All types except objects define immutable values (that is, values which can't be changed). For example (and unlike in C), Strings are immutable. We refer to values of these types as "primitive values".
+
+
+
+
+Unlike some programming languages (such as C), JavaScript strings are immutable. This means that once a string is created, it is not possible to modify it.
+
+
+————————————————————————————————————————————————————————
+String
+————————————————————————————————————————————————————————
+Unlike some programming languages (such as C), JavaScript strings are immutable. This means that once a string is created, it is not possible to modify it.
+
+
+
+
+// Using a string method doesn't mutate the string
+var bar = "baz";
+console.log(bar);               // baz
+bar.toUpperCase();
+console.log(bar);               // baz
+
+// Using an array method mutates the array
+var foo = [];
+console.log(foo);               // []
+foo.push("plugh");
+console.log(foo);               // ["plugh"]
+
+// Assignment gives the primitive a new (not a mutated) value
+bar = bar.toUpperCase();       // BAZ
+
+
+A primitive can be replaced, but it can't be directly altered.
+
+
+
+All primitives are immutable, i.e., they cannot be altered. It is important not to confuse a primitive itself with a variable assigned a primitive value. The variable may be reassigned a new value, but the existing value can not be changed in the ways that objects, arrays, and functions can be altered.
+
+
+
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures

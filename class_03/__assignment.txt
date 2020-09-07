@@ -1,0 +1,12 @@
+1. Write a text make it bold with JS event.
+
+2. write a function that can calculate 2 numbers.
+
+3. Write down on a paper what you learned in class 03
+
+4. How much do you spend in total from first class 01-03
+
+5. Make A Calculator Interface with HTML-CSS (Within Class 05)
+
+6. Make a E-commerce with HTML-CSS (Within Class 05)
+ 

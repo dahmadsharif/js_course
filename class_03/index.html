@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascirpt</title>
+</head>
+<body>
+
+	<p>
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo amet, autem voluptas suscipit esse tenetur consequatur fuga at iure quidem mollitia ab dolorem minima nam hic aliquam itaque quae debitis.
+	</p>
+
+	
+<script>
+	const para = document.querySelector('p');
+
+	para.addEventListener('click', updateName);
+
+	function updateName() {
+	  let name = prompt('Enter a new name');
+	  para.textContent = 'Player 1: ' + name;
+	}
+</script>
+</body>
+</html>

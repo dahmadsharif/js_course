@@ -1,10 +1,10 @@
-console.time();
-for (i = 0; i < 100000; i++) {
+console.time("test");
+for (i = 0; i < 10000000000; i++) {
 
 }
-console.timeEnd();
+console.timeEnd("test");
 
-debugger;
+// debugger;
 
 
 /*
