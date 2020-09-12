@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Class:: 04 :: Javascript</title>
+	<link rel="stylesheet" href="../assets/bootstrap.css">
+</head>
+<body>
+
+		<div class="container">
+			<div id="block">
+					<h2>Hello From Block</h2>
+			</div> <!-- End -->
+
+			<div>
+				<a id="getClick" href="#" onClick="getClick()">Click</a>
+			</div>
+
+
+			<div>
+				<form id="form" action="#" method="get">
+	                 <div>
+	                 	<label>Test field:  </label>
+	                 		<input type="text" name="firstName" placeholder="First Name" id="firstName"
+	                 		onkeyup=""
+	                 		>
+	                 </div>
+	                  
+	                 <button type="submit">Submit form</button>
+                 </form>
+                <p id="log"></p>
+			</div>	 <!-- End -->
+
+
+			<div id="screen">
+				
+			</div>	 <!-- End -->				
+	 </div> <!-- End container -->
+	
+
+	
+
+	<script>
+		
+
+		/* get elements by id */
+		let getEl = function(id) {
+			return document.getElementById(id);
+		};
+
+
+		let b = getEl("block");
+				b.style.color = 'red';
+
+
+		function getClick() {
+			 b.style.color = 'green'
+			return;
+		}
+
+		/* 
+			function can act as a variable
+		*/
+
+
+		getEl("getClick").addEventListener("click", function(event) {
+				console.log("Hello world");
+		});
+
+
+		getEl("firstName").addEventListener("keyup", event => {
+		  if (event.isComposing || event.keyCode === 13) {
+		    return;
+		  }
+		  
+		  	console.log('You presss', event.target.value);
+
+		  	getEl("log").innerHTML = event.target.value;
+
+		});
+
+
+
+		/* Mouse Event */
+
+		let screenLog = getEl('screen');
+		document.addEventListener('mousemove', logKey);
+
+		function logKey(e) {
+		  screenLog.innerText = `
+		    Screen X/Y: ${e.screenX}, ${e.screenY}
+		    Client X/Y: ${e.clientX}, ${e.clientY}`;
+		}
+
+
+		window.addEventListener("load", function(cricket) {
+				console.log(cricket);
+
+				/* Load */
+				/* End Load*/
+		});
+
+
+
+
+
+	
+
+
+
+	</script>
+
+
+
+
+	
+</body>
+</html>

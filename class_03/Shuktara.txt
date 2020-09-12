@@ -1,0 +1,67 @@
+RICE/ PULAO/BIRYANI (1:2)	 TAKA
+69   Hyderabadi Biryani Chicken/Mutton	400/500
+70   Chicken Biryani	380
+71   Mutton Biryani	480
+72   Vegetable Pulao	250
+73   Zeera Pulao	220
+74   Plain Pulao	200
+
+
+
+CHICKEN (1:2)	 TAKA
+87    Chicken Bhorta	300
+88    Chicken Bhuna	 320
+89     Chicken Korma	350
+90    Chicken Satkora	380
+BEEF (1:2)	 TAKA
+91   Beef Bhuna(1:2)	380
+92   Beef Satkhora  (1:2)	400
+
+
+
+VEGETABLE (1:2)	 TAKA
+58   Vegetable Dopiaza	220
+59   Vegetable Jhal Ferazi	220
+60   Vegetable Kolha Puri	250
+61  Allo Matar Paneer	230
+62   Paneer Makhani	270
+63   Palak Paneer	210
+
+
+
+
+108     Steamed Rice   (1:2)	100
+109     Bhuna Khichuri (1:2)	250
+110   Elish Pulao    (1:1)	400
+
+
+
+
+
+
+
+————————————————————————————————————————————————————————
+69   Hyderabadi Biryani Chicken/Mutton	400/500
+
+400 + 200 / 1000 / = 1250
+————————————————————————————————————————————————————————
+
+108     Steamed Rice   (1:2)	100
+
+Rice / 300
+Chicken Bhuna	 320 / 640 TK
+
+
+
+200
+
+DAAL (1:2)	 
+106     Daal Plain	90
+107    Daal Shatkora	150
+
+940 + 300 + 200 + 25%
+1240 + 200 = 1440 + 25
+
+300 V
+
+

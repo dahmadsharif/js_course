@@ -1,0 +1,36 @@
+1. You must be comfortable with Javascript function, var declaration, target a document
+2. var decalre.
+3. function, return statement, function can be written in two ways
+4. JS Events
+5. if else, switch, ternary Operator
+6. For loop
+7. Make a calulator
+8. LocalStorage
+9. Nested Object Propetrty Access with if else
+10. Discuss with data type undefined
+11. HTML form
+11. Use Bootstarp ad learn some common class
+12. Jquery
+
+
+
+
+Assignment
+1. Write a function that can add two numbers.
+2. Make a calculator UI with minimum functionality. 
+3. Make only UI of a ecommerce site.
+4. Prepare to take a class 
+5. Level up your English profieciency
+
+Push it in your personal github repository and then share the link in the class room.
+
+
+
+Event API
+https://developer.mozilla.org/en-US/docs/Web/API/Event 
+https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent
+
+https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent
+
+
+

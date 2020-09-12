@@ -68,6 +68,13 @@ JavaScript Operators
 3. Iterators (for loop)
 
 
+Introduction to JavaScript event handling.
+Working with on click and on load events.
+Working with on blur and on focus events.
+Complete form validation using JavaScript.
+Hiding and showing form sections
+
+
 
 
 —————————————————————————————————————————
