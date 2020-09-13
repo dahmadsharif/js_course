@@ -80,9 +80,9 @@ Hiding and showing form sections
 —————————————————————————————————————————
 Class Five 
 —————————————————————————————————————————
-Scope 
-Hoisting
-Let vs var Vs const
+1. If else
+2. Switch
+3. Iterators (for loop)
 
 
 

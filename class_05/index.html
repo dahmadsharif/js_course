@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Class:: 04 :: Javascript</title>
+	<link rel="stylesheet" href="../assets/bootstrap.css">
+
+	<style>
+		#calculator-block {
+			width: 400px;
+			margin: 2rem auto;
+		}
+	
+		.number-list > li {
+		  display: inline-block;
+		  margin-right: 0px;
+		  margin-bottom: 5px;
+		  cursor: pointer;
+		  color: #333;
+		  font-weight: 300;
+		  padding: 5px 10px;
+		  width: 44px;
+		  border: 1px solid #c6c6c6;
+		  color: #444; 
+		}
+	
+	</style>
+</head>
+<body>
+
+		<div class="container">
+				<div class="calculator">
+					<div class="calculator-block">
+						<input type="text" id="getInputValue" placeholder="0">
+						<span id="displayResult" style="text-align: left;">Result</span>
+							<div class="number-block">
+							<ul class="number-list">
+								<li onClick="goInitialState()" class="">CLR</li>
+								<li onClick="removeElement()" class="">DEL</li>
+								<li onClick="addToDisplay('%')">%</li>
+								<li onClick="addToDisplay('/')">&divide;</li>
+								<li onClick="addToDisplay('9')" class="decimal-obj">9</li>
+								<li onClick="addToDisplay('8')" class="decimal-obj">8</li>
+								<li onClick="addToDisplay('7')" class="decimal-obj">7</li>
+								<li onClick="addToDisplay('*')">x</li>
+								<li onClick="addToDisplay('6')" class="decimal-obj">6</li>
+								<li onClick="addToDisplay('5')" class="decimal-obj">5</li>
+								<li onClick="addToDisplay('4')" class="decimal-obj">4</li>
+								<li onClick="addToDisplay('-')" class="">&minus;</li>
+								<li onClick="addToDisplay('3')" class="decimal-obj">3</li>
+								<li onClick="addToDisplay('2')" class="decimal-obj">2</li>
+								<li onClick="addToDisplay('1')" class="decimal-obj">1</li>
+								<li onClick="addToDisplay('+')" class="">+</li>
+								<li onClick="addToDisplay('.')" class="decimal-obj">&sdot;</li>
+								<li onClick="addToDisplay('0')" class="decimal-obj">0</li>
+								<li onClick="addToDisplay('00')" class="decimal-obj">00</li>
+								<li onClick="getResult()" class="bg-black">=</li>
+							</ul>
+						</div> <!-- End  number Block -->
+					</div> <!-- End Calculator Block -->
+				</div> <!-- End Calculator Block -->
+	 	</div> <!-- End container -->
+	
+
+	
+
+	<script>
+		
+
+		
+
+	
+
+	</script>
+
+
+
+
+	
+</body>
+</html>
