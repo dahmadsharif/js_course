@@ -1,0 +1,8 @@
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval
+
+eval() is a function property of the global object.
+
+The argument of the eval() function is a string. If the string represents an expression, eval() evaluates the expression. If the argument represents one or more JavaScript statements, eval() evaluates the statements. Do not call eval() to evaluate an arithmetic expression; JavaScript evaluates arithmetic expressions automatically.
+
+
+eval() is also slower than the alternatives, since it has to invoke the JavaScript interpreter, while many other constructs are optimized by modern JS engines.

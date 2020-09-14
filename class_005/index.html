@@ -11,18 +11,21 @@
 			width: 400px;
 			margin: 2rem auto;
 		}
+		* {
+			margin: 0;
+			padding: 0;
+		}
 	
 		.number-list > li {
 		  display: inline-block;
 		  margin-right: 0px;
 		  margin-bottom: 5px;
 		  cursor: pointer;
-		  color: #333;
-		  font-weight: 300;
 		  padding: 5px 10px;
 		  width: 44px;
 		  border: 1px solid #c6c6c6;
 		  color: #444; 
+		  text-align: center;
 		}
 	
 	</style>
@@ -31,9 +34,11 @@
 
 		<div class="container">
 				<div class="calculator">
-					<div class="calculator-block">
+					<div class="calculator-block my-4">
 						<input type="text" id="getInputValue" placeholder="0">
-						<span id="displayResult" style="text-align: left;">Result</span>
+						<div>
+							<span id="displayResult" style="text-align: left;">Result</span>
+						</div>
 							<div class="number-block">
 							<ul class="number-list">
 								<li onClick="goInitialState()" class="">CLR</li>
