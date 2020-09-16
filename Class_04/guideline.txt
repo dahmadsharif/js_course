@@ -1,0 +1,24 @@
+For first time
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+
+
+———————————————————————————————————————
+step-1
+———————————————————————————————————————
+git clone https://github.com/dahmadsharif/js_course.git
+
+
+———————————————————————————————————————
+Go to student_folder. You will get a folder according to your name. Put your code there.
+write your code ....
+———————————————————————————————————————
+step-2
+———————————————————————————————————————
+git status
+git add .
+git status
+
+git commit -m 'Your message'
+git remote -v
+git push origin master
