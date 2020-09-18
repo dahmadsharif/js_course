@@ -1,0 +1,4 @@
+1. Calculator
+2. Date with Time. Date will update on every second.
+2. Ecommerce UI
+3. Study LocalStorage

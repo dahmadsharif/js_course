@@ -1,0 +1,19 @@
+class,
+constructor
+prototype
+Inheritance
+override
+new
+
+
+Function Vs Class
+
+
+
+Arrow Functions (ES6)
+Function
+Use Return statement
+Difference between ordinary and Arrow function
+
+
+map, filter, reduce
