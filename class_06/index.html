@@ -46,95 +46,9 @@
 		</header>
 
 		<div class="container">
-			<div class="row">
-				<div class="col-sm-4 col-12">
+			<div class="row" id="product_holder">
+				
 
-					<div class="card my-4" style="width: 18rem;">
-					  <img src="assets/01.jpg" class="card-img-top" alt="...">
-					  <div class="card-body">
-					    <h5 class="card-title">Cotton Shirt</h5>
-					    <p class="card-text">1200 TK</p>
-					    <a href="#" class="btn btn-success">Add to Cart</a>
-					  </div>
-					</div>
-				</div> <!-- End col -->
-
-				<div class="col-sm-4 col-12">
-
-					<div class="card my-4" style="width: 18rem;">
-					  <img src="assets/02.jpg" class="card-img-top" alt="...">
-					  <div class="card-body">
-					    <h5 class="card-title">Cotton Shirt</h5>
-					    <p class="card-text">1200 TK</p>
-					    <a href="#" class="btn btn-success">Add to Cart</a>
-					  </div>
-					</div>
-				</div> <!-- End col -->
-
-
-				<div class="col-sm-4 col-12">
-
-					<div class="card my-4" style="width: 18rem;">
-					  <img src="assets/03.jpg" class="card-img-top" alt="...">
-					  <div class="card-body">
-					    <h5 class="card-title">Cotton Shirt</h5>
-					    <p class="card-text">1200 TK</p>
-					    <a href="#" class="btn btn-success">Add to Cart</a>
-					  </div>
-					</div>
-				</div> <!-- End col -->
-
-
-				<div class="col-sm-4 col-12">
-
-					<div class="card my-4" style="width: 18rem;">
-					  <img src="assets/04.jpg" class="card-img-top" alt="...">
-					  <div class="card-body">
-					    <h5 class="card-title">Cotton Shirt</h5>
-					    <p class="card-text">1200 TK</p>
-					    <a href="#" class="btn btn-success">Add to Cart</a>
-					  </div>
-					</div>
-				</div> <!-- End col -->
-
-
-				<div class="col-sm-4 col-12">
-
-					<div class="card my-4" style="width: 18rem;">
-					  <img src="assets/13.jpg" class="card-img-top" alt="...">
-					  <div class="card-body">
-					    <h5 class="card-title">Cotton Shirt</h5>
-					    <p class="card-text">1200 TK</p>
-					    <a href="#" class="btn btn-success">Add to Cart</a>
-					  </div>
-					</div>
-				</div> <!-- End col -->
-
-
-				<div class="col-sm-4 col-12">
-
-					<div class="card my-4" style="width: 18rem;">
-					  <img src="assets/06.jpg" class="card-img-top" alt="...">
-					  <div class="card-body">
-					    <h5 class="card-title">Cotton Shirt</h5>
-					    <p class="card-text">1200 TK</p>
-					    <a href="#" class="btn btn-success">Add to Cart</a>
-					  </div>
-					</div>
-				</div> <!-- End col -->
-
-
-				<div class="col-sm-4 col-12">
-
-					<div class="card my-4" style="width: 18rem;">
-					  <img src="assets/09.jpg" class="card-img-top" alt="...">
-					  <div class="card-body">
-					    <h5 class="card-title">Cotton Shirt</h5>
-					    <p class="card-text">1200 TK</p>
-					    <a href="#" class="btn btn-success">Add to Cart</a>
-					  </div>
-					</div>
-				</div> <!-- End col -->
 			</div> <!-- End row -->
 				
 	 	</div> <!-- End container -->
@@ -153,7 +67,91 @@
 	 	</footer>
 	
 
-	
+	<script>
+			let response;
+			let data = fetch('http://localhost:8080/js_course/data.json').then(response => response.json()).then(data => {
+
+					response = data;
+					console.log(response);
+
+
+					let x = document.getElementById('product_holder');
+					for(let i = 0; i < response.length; i++ ) {
+
+						let item = document.createElement('div');
+									item.className = "col-sm-4 col-12";
+
+					  	let div = document.createElement('div');
+					  		div.classList.add = "card my-4";
+					  		div.setAttribute('style', "width: 18rem");
+
+
+
+				  		let card = document.createElement('div');
+				  		card.className = "card my-4";
+				  		card.setAttribute('style', "width: 18rem");
+
+
+
+
+					  	let file_name = 'assets/' + response[i]["img"];
+					  	let img = document.createElement('IMG');
+					  		img.className = "card-img-top";
+					  		img.setAttribute('src', file_name);
+
+
+					  let cardBody = document.createElement('div');
+				  		  cardBody.className = "card-body";
+
+
+
+
+
+				  	   let title = response[i]["product_name"]
+				  	   let cardTitle = document.createElement('h5');
+				  		   cardTitle.className = "card-title";
+				  	   let cardTitleText = document.createTextNode(title);
+				  	   	   cardTitle.appendChild(cardTitleText)
+
+
+
+
+
+
+					  		/*
+
+					  		var td1_text = document.createTextNode(cityName);
+                                  td1.appendChild(td1_text);
+
+                                  <div class="card-body">
+								    <h5 class="card-title">Cotton Shirt</h5>
+								    <p class="card-text">1200 TK</p>
+								    <a href="#" class="btn btn-success">Add to Cart</a>
+								  </div>
+
+                             */
+
+					  
+
+
+
+					  		item.appendChild(div);
+					  		div.appendChild(card);
+					  		card.appendChild(img);
+					  		card.appendChild(cardBody);
+					  		cardBody.appendChild(cardTitle);
+					  		x.appendChild(item);
+
+
+
+					}
+
+
+			});
+			
+
+				
+	</script>
 	
 </body>
 </html>
