@@ -1,0 +1,11 @@
+#1da1f2
+color: rgba(29,161,242,1.00);
+rgb(29, 161, 242);
+
+Light Blue Background: #e8f5fe
+Text: #30a9f3
+Icon# 1da1f2
+
+
+ont-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+}
