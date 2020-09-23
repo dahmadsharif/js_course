@@ -1,0 +1,5 @@
+1. Rest API
+2.  Postman
+	https://www.postman.com/downloads/
+3. ES6 arrow function
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions

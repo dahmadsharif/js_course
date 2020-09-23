@@ -1,0 +1,22 @@
+Topics: 
+
+https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous
+
+https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous
+
+https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Promises
+
+
+https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Concepts
+
+Curl :: Client for URLs
+curl -L http://www.google.com
+
+curl https://curl.haxx.se
+
+
+2. Returning only the HTTP headers of a URL
+curl -I https://www.keycdn.com
+
+
+curl --request GET https://www.keycdn.com/

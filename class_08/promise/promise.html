@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise And Callback</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>  
+    <div>
+        <h2>
+            Callback
+        </h2>
+        <p>
+            A callback is a function that is passed into another function as a argument.
+        </p>
+    </div>
+    <div>
+        <h2>Promise </h2>
+        <p>
+            A promise is an object representing the eventual completation of an asynchronous operation.
+        </p>
+        <p>
+            Essentially, A promise is an return object that attach a callbac instead callback pass into a function.                
+        </p>
+    </div>
+    <script>
+        function numebrLoop () {
+            for(var i = 0; i < 10000; i++) { 
+
+            }
+           // console.log('Loop End');
+        }
+        numebrLoop();
+
+        function hello () {
+            console.log('I am from hello');
+        }      
+
+        hello (function bye() {
+            setTimeout(function(){
+                    console.log('Hi I am from callback')
+            }, 1000);
+            console.log('hi');
+        })
+    </script>
+</body>
+</html>          
+          
+
+     

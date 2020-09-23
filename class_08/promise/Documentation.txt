@@ -1,0 +1,2 @@
+A promise is a single JS Object that might produce a single value some time in the future:
+Either a resolved value Or not a resolved a value due to network error.

@@ -14,7 +14,6 @@
 
 
 
-
 Assignment
 1. Write a function that can add two numbers.
 2. Make a calculator UI with minimum functionality. 

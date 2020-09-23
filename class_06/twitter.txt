@@ -6,6 +6,6 @@ Light Blue Background: #e8f5fe
 Text: #30a9f3
 Icon# 1da1f2
 
-
-ont-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+body {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
 }
