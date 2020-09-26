@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Firebase</title>
+	<body>
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase.js"></script>
+
+
+
+    <script type="text/javascript">
+        /*   var firebaseConfig = {
+          apiKey: "AIzaSyDhJ44wDry0txFnZxBDS4quPuEje4uGVuA",
+          authDomain: "profile-71c5e.firebaseapp.com",
+          databaseURL: "https://profile-71c5e.firebaseio.com",
+          projectId: "profile-71c5e",
+          storageBucket: "profile-71c5e.appspot.com",
+          messagingSenderId: "317199924458",
+          appId: "1:317199924458:web:e060018e7bb0edb15deb93"
+        }; */
+    
+        firebase.initializeApp(firebaseConfig);
+
+
+        var db = firebase.firestore();
+
+        
+        db.collection("cities").doc("LA").set({
+            name: "Los Angeles",
+            state: "CA",
+            country: "USA"
+        })
+        .then(function() {
+            console.log("Document successfully written!");
+        })
+        .catch(function(error) {
+            console.error("Error writing document: ", error);
+        });
+
+
+
+
+
+      </script>
+
+    </script>
+</body>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,2 @@
+https://firebase.google.com/docs/web/setup#from-the-cdn
+https://firebase.google.com/docs/database/web/start

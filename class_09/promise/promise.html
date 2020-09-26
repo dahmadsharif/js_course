@@ -33,20 +33,26 @@
             for(var i = 0; i < 10000000; i++) { 
 
             }
-           // console.log('Loop End');
+           console.log('Loop End');
         }
         numebrLoop();
 
         function hello () {
             console.log('I am from hello');
-        }      
+        }     
+        
+        setTimeout(function(){
+                console.log('Hi I am from callback')
+        }, 1000);
 
-        hello (function bye() {
-            setTimeout(function(){
-                    console.log('Hi I am from callback')
-            }, 1000);
-            console.log('hi');
-        })
+        hello();
+        console.log('hi');
+
+
+
+       
+
+      
     </script>
 </body>
 </html>          

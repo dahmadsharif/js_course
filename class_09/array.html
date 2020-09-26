@@ -13,17 +13,13 @@
     <script>
 
 
-        /* Search */
+        /* Remove Duplicate */
         let list = ['a', 'b', 'c', 'd', 'a'];
         let newList = [];
-
-
         let arr = list.filter ((value, index, array) => { 
-           console.log(value, index);
-            
             return array.indexOf(value) == index;
         });
-                console.log(arr, 'newList');
+        /* End remove duplicate */
         
     </script>
 </body>
