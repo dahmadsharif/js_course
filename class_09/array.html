@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrat Method</title>
+
+    <script src="../assets/lodash.js"></script>
+</head>
+<body>
+    
+
+    <script>
+
+
+        /* Search */
+        let list = ['a', 'b', 'c', 'd', 'a'];
+        let newList = [];
+
+
+        let arr = list.filter ((value, index, array) => { 
+           console.log(value, index);
+            
+            return array.indexOf(value) == index;
+        });
+                console.log(arr, 'newList');
+        
+    </script>
+</body>
+</html>

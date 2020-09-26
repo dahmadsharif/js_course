@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class :: 09</title>
+
+    <link rel="stylesheet" href="assets/bootstrap.css">
+
+    <style>
+        #top_header {
+            border-bottom: 1px solid #d1d1d1;
+        }
+
+        #listHolder span {
+            width: 100px;
+            display: inline-block
+        }
+        .list-block {
+            border-bottom: 1px solid #cecece;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header id="top_header">
+        <div class="container">
+            <div class="row my-1">
+                <div class="col-sm-6 col-12">
+                    <h4>Student App Listing</h4>
+                </div> <!-- End div -->
+            </div>  <!-- End div -->
+        </div> <!-- End div -->
+    </header>
+
+    <div class="container">
+        <div class="row my-4">
+            <div class="col-sm-6 col-12">
+                    <div class="card card-body">
+                        <form action="#" method="GET" onsubmit="addObject(event)">
+                            <div>
+                                Student Name
+                            </div>
+    
+                            <div class="my-4">
+                                <input type="text" class="form-control" name="studentName" placeholder="Student Name" id="studentName">
+                            </div>
+    
+                            <div>
+                                <button class="btn btn-primary" oncl>Add Student</button>
+                            </div>
+                        </form>
+                    </div> <!-- End div -->
+            </div> <!-- End div -->
+
+            <div class="col-sm-6 col-12">
+                <div class="card card-body" id="root">
+                    
+                   
+                </div> <!-- End div -->
+        </div> <!-- End div -->
+
+
+        </div> <!-- End div -->
+    </div> <!-- End div -->
+
+    <script>
+          let sListDiv = document.createElement("div"); 
+                         sListDiv.setAttribute("id", "listHolder");
+
+          let r = document.getElementById('root');
+              r.appendChild(sListDiv);
+
+        let s = document.getElementById("studentName");
+        let v = s.value;
+        let div;
+        let sList = [];
+
+        
+        let data = ['Steve Waugh', 'Ronaldo', 'Messi', 'Maradona', 'Zidan', 'Brett Lee', 'Chris Gayle'];
+
+        
+ 
+
+       
+
+        function renderHTML() {
+            sListDiv.remove();
+            for(let i = 0; i < sList.length; i++) {
+                 div = document.createElement("div");
+                       div.className = 'my-2 list-block';
+                let spanBlock = document.createElement("span");
+                let dText = document.createTextNode(sList[i]);
+                    spanBlock.appendChild(dText);
+                 let objIndex = `removeObject(${i})`;
+                 let btnBlock = document.createElement("span");
+                 let btn = document.createElement("button");
+                     btn.className = 'btn btn-sm btn-primary mx-2';
+                     btn.appendChild(document.createTextNode("Delete"))
+                     btn.setAttribute("onclick", objIndex);
+                  div.appendChild(spanBlock);
+                  btnBlock.appendChild(btn);
+                  div.appendChild(btnBlock);
+            }
+            
+            sListDiv.appendChild(div);
+            r = document.getElementById('root');
+            r.appendChild(sListDiv);
+        }
+
+
+        function removeObject(index) {
+            sList.splice(index, 1);
+
+            console.log(sList, 'sList');
+            
+            
+              sListDiv.innerHTML = '';
+              sListDiv.remove();
+
+
+          //  debugger;
+            renderHTML();
+            
+        }
+
+
+               
+       function addObject(e) {
+            e.preventDefault();
+            v = s.value;
+
+            if(v === '') {
+                let rValue = data[Math.ceil(Math.random() * 6)];
+                sList.push(rValue);
+                
+            } else {
+                sList.push(v);
+            }
+            s.value = '';
+            renderHTML();
+            
+        }
+       
+
+
+
+    </script>
+</body>
+</html>
+

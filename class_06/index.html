@@ -9,6 +9,12 @@
 	<style>
 		#top_header {
 			border-bottom: 1px solid #d5d5d5;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			z-index: 12;
+			background: #FFF;
 		}
 		.nav {
 			align-items: center;
@@ -20,7 +26,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-4 col-12">
-						<img src="assets/logo.jpg" alt="" style="max-width: 80px">
+						<img src="assets/logo.jpg" alt="" style="max-width: 50px">
 					</div> <!-- End col -->
 
 					<div class="col-sm-8 col-12">
@@ -36,7 +42,7 @@
 							    <a class="nav-link" href="#">Womens</a>
 							  </li>
 							  <li>
-							  		<span class="badge badge-success">00</span>
+							  		<a href="#">Cart <span class="badge badge-success" id=cartLength>0</span></a>
 							  </li>
 							</ul>
 						</nav>
@@ -45,7 +51,7 @@
 			</div> <!-- End container -->
 		</header>
 
-		<div class="container">
+		<div class="container" style="margin-top: 4rem">
 			<div class="row" id="product_holder">
 				
 
@@ -69,7 +75,7 @@
 
 	<script>
 			let response;
-			let data = fetch('http://localhost:8080/js_course/data.json').then(response => response.json()).then(data => {
+			let data = fetch('http://127.0.0.1:5500/data.json').then(response => response.json()).then(data => {
 
 					response = data;
 					console.log(response);
@@ -83,13 +89,11 @@
 
 					  	let div = document.createElement('div');
 					  		div.classList.add = "card my-4";
-					  		div.setAttribute('style', "width: 18rem");
 
 
 
 				  		let card = document.createElement('div');
 				  		card.className = "card my-4";
-				  		card.setAttribute('style', "width: 18rem");
 
 
 
@@ -111,36 +115,27 @@
 				  	   let cardTitle = document.createElement('h5');
 				  		   cardTitle.className = "card-title";
 				  	   let cardTitleText = document.createTextNode(title);
-				  	   	   cardTitle.appendChild(cardTitleText)
+				  	   	   cardTitle.appendChild(cardTitleText);
 
 
 
-
-
-
-					  		/*
-
-					  		var td1_text = document.createTextNode(cityName);
-                                  td1.appendChild(td1_text);
-
-                                  <div class="card-body">
-								    <h5 class="card-title">Cotton Shirt</h5>
-								    <p class="card-text">1200 TK</p>
-								    <a href="#" class="btn btn-success">Add to Cart</a>
-								  </div>
-
-                             */
-
-					  
-
-
+						let id = JSON.stringify(response[i]);
+						let objIndex = `addToCart(${id})`;
+						let btnBlock = document.createElement("span");
+						let btn = document.createElement("button");
+							btn.className = 'btn btn-sm btn-success my-2';
+							btn.appendChild(document.createTextNode("Add To Cart"))
+							btn.setAttribute("onclick", objIndex);
+						
 
 					  		item.appendChild(div);
 					  		div.appendChild(card);
 					  		card.appendChild(img);
 					  		card.appendChild(cardBody);
 					  		cardBody.appendChild(cardTitle);
-					  		x.appendChild(item);
+							  x.appendChild(item);
+							  
+							cardBody.appendChild(btn);
 
 
 
@@ -148,8 +143,14 @@
 
 
 			});
-			
-
+			let cartItems = [];
+			function addToCart (object) {
+				console.log(object);
+				
+				cartItems.push(object)
+				let x = document.getElementById("cartLength");
+					x.innerHTML = cartItems.length;
+			}
 				
 	</script>
 	
