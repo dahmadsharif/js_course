@@ -1,0 +1,9 @@
+https://www.w3schools.com/js/js_object_classes.asp#:~:text=ES6%2C%20also%20known%20as%20ECMAScript2015,inside%20a%20constructor()%20method.
+
+
+class Car {
+  constructor(brand) {
+    this.carname = brand;
+  }
+}
+mycar = new Car("Ford");
