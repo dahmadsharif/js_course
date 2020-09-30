@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS:: Class 10</title>
+</head>
+<body>
+
+
+
+<script>
+
+	function test() {
+		console.log('test');
+	}
+
+
+	 
+
+	function lateResponse(test){
+
+		
+		const url = 'https://jsonplaceholder.typicode.com/posts/1'
+		var xmlHttp = new XMLHttpRequest();
+		xmlHttp.open( "GET", url, true ); 
+		xmlHttp.send(null);
+
+		let r = xmlHttp["response"];
+		console.log(r);
+
+		xmlHttp.onload = function() {
+			console.log(xmlHttp.response);
+			test();	
+		};
+			
+	
+		
+		
+
+	}
+
+	lateResponse(test);
+
+
+	fetch('https://jsonplaceholder.typicode.com/posts/1')
+    .then(response => response.json())
+    .then(json => console.log(json));
+
+
+
+	
+</script>
+</body>
+</html>
