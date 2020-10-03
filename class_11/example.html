@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Classs: 11</title>
+</head>
+<body>
+
+
+
+<script>
+	
+
+	/* Callback */
+	function callback (test) {
+		console.log('callback');
+
+		test();
+	}
+	callback(function test () {
+		console.log('test');
+	});
+	/* End Callback */
+
+
+
+	class Person {
+		constructor(name, profession) {
+			this.name = name;
+			this.profession = profession;
+
+		}
+		
+		get age() {
+			return this.name;
+		}
+
+		set age(age) {
+		  this.name = age
+		}
+
+		static staticMethod() {
+			return 'static method has been called.';
+		}
+	}
+	let jabed = new Person('Jabed', 'Student');
+		jabed.age = 20;
+
+	console.log(jabed.age);
+
+
+
+
+
+
+</script>
+</body>
+</html>
