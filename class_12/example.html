@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Classs: 11</title>
+</head>
+<body>
+
+
+
+<script>
+	
+
+
+	class Person {
+		constructor(name, profession) {
+			this.name = name;
+			this.profession = profession;
+			this.phone;
+		}
+
+		getInfo() {
+			return this.name + ',' + this.profession;
+		}
+		
+		get getPhone() {
+			return this.phone;
+		}
+		set getPhone(asdasdasdda) {
+		  this.phone = asdasdasdda;
+		}
+
+		static staticMethod() {
+			return 'static method has been called.';
+		}
+	}
+	let jabed = new Person('Jabed', 'Student');
+	jabed.getPhone = '251541'
+//	console.log(jabed.getPhone);
+//	console.log(jabed.getInfo());
+
+
+
+	class Profile extends Person {
+		constructor(name,  email) {
+			super(name);
+			this.email = email;
+		}
+		getParentInfo() {
+			return this.getInfo() + ',' + this.name;
+		}
+	}
+
+	let q = new Profile('Johnw34', 'a@b.com');
+
+
+	console.log(q.getParentInfo());
+	
+
+
+
+
+
+</script>
+</body>
+</html>
