@@ -46,14 +46,39 @@
 			this.email = email;
 		}
 		getParentInfo() {
-			return this.getInfo() + ',' + this.name;
+			return this.getInfo();
 		}
 	}
 
-	let q = new Profile('Johnw34', 'a@b.com');
+	let q = new Profile('John', 'a@b.com');
 
 
 	console.log(q.getParentInfo());
+
+
+
+
+
+
+	class Animal {
+		constructor(name) {
+			this.name = name;
+		}
+
+		speak() {
+			console.log(this.name);
+		}
+	}
+
+	class Dog extends Animal {
+		constructor(name) {
+			super(name)
+		}
+
+		speak() {
+			console.log(this.name);
+		}
+	}
 	
 
 
