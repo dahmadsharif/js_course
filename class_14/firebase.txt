@@ -1,0 +1,6 @@
+https://github.com/angular/angularfire
+
+https://github.com/angular/angularfire/blob/master/docs/install-and-setup.md
+
+npm install firebase @angular/fire --save
+

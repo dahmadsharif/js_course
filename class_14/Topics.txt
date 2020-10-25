@@ -1,0 +1,15 @@
+
+
+Class 13   10 October 2020 (Saturday)   Angular
+Class 14   12 October 2020 (Monday)     Angular
+Class 15   14 October 2020 (Wednesday)  Angular
+Class 16   17 October 2020 (Saturday)   Angular
+
+
+Class 17   19 October 2020 (Monday)      React
+Class 18   21 October 2020 (Wednesday)   React
+Class 19   23 October 2020 (Saturday)    React
+
+
+
+ng new my-app
