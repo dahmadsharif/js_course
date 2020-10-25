@@ -1,0 +1,62 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import 'assets/bootstrap.css';
+@import 'assets/icon.css';
+
+
+
+
+
+.container {
+	max-width: 960px !important;
+}
+#top_header {
+    border-bottom: 1px solid #e8e8e8;
+    position: fixed;
+    z-index: 12;
+    top: 0;
+    left: 0;
+    width: 100%;
+	background: #fff;
+	max-height: 40px;
+}
+.img_holder {
+	height: 160px ;
+	max-height: 160px;
+	overflow: hidden;
+}
+
+.cp {
+	cursor: pointer;
+}
+
+.custom-badge {
+    color: #666;
+    background-color: #ffffff;
+    border: 1px solid #b5b5b5;
+}
+.f-12 {
+	font-size: 12px;
+}
+
+.f-14 {
+	font-size: 14px;
+}
+
+.f-16 {
+	font-size: 16px;
+}
+
+.f-18 {
+	font-size: 18px;
+}
+.f-20 {
+	font-size: 22px;
+}
+.f-22 {
+	font-size: 22px;
+}
+
+.f-b {
+	font-weight: 600;
+}

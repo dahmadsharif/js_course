@@ -1,0 +1,38 @@
+<app-header></app-header>
+<div class="container" style="min-height: 90vh; margin-top: 2.5rem;">
+   
+    <div class="row">
+        <div *ngFor="let object of productList; let i = index;">
+            <div class="col-sm-4 col-12 my-4">
+                <div>
+                  <div class="card" style="width: 18rem;">
+                    <div class="img_holder">
+                      <a routerLink="/{{ object['specificUrl'] }}">
+                        <img class="card-img-top" src="{{ object['images'] }}" alt="">
+                      </a>
+                    </div>  <!-- End img Holder -->
+                      <div class="card-body">
+                        <h6 class="card-title pb-3 border-bottom"> {{ i + 1 }} :: {{ object["searchObject"]["label"] }} </h6>
+                        <p class="card-text my-0"> Category : {{ object["searchObject"]["category"] | titlecase  }}</p>
+                        <p class="card-text my-0"> Sub Category: {{ object["searchObject"]["subCategory"] | titlecase  }}</p>
+                        
+                        <p class="card-text"> <span class="font-weight-bold">{{ object["cartObject"]["price"] }}</span> {{ object["cartObject"]["currency"] }}</p>
+
+
+                        <div class="d-flex justify-content-between">
+                          <span class="btn btn-sm btn-primary cp" (click)="getIntoCart(object['cartObject'])">Add To Cart</span>
+
+
+                          <span class="btn btn-sm btn-secondary cp" (click)="getIntoWishlist(object['cartObject'])">Add To Wish List</span>
+                        </div>  <!-- End -->
+                       
+
+
+                      </div>
+                    </div>
+                </div>
+          </div>  <!-- End col -->
+        </div> <!-- End  -->
+    </div> <!-- End row -->
+</div> <!-- End container -->
+<app-footer></app-footer>

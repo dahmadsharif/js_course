@@ -1,0 +1,24 @@
+this.productList = [{
+      "_id": "537f3aaac769230000be7e5f",
+      "description": "Assassin'S Creed Ultimate Collection 1 & 2 Jc (Win Xpvistawin 7)",
+      "images": "https://placehold.co/320x240",
+      "model": "10053",
+      "searchObject": {
+          "label": "Sony Computer Entertainment",
+          "price": "220",
+          "category": "Gaming",
+          "subCategory": "PC",
+          "currency": "USD",
+      }},
+      {
+        "_id": "537f3aaac769230000be7e5f",
+        "description": "Assassin'S Creed Ultimate Collection 1 & 2 Jc (Win Xpvistawin 7)",
+        "images": "https://placehold.co/320x240",
+        "model": "10053",
+        "searchObject": {
+            "label": "Sony Computer Entertainment",
+            "price": "220",
+            "category": "Gaming",
+            "subCategory": "PC",
+            "currency": "USD",
+        }}

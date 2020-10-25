@@ -1,0 +1,52 @@
+<header id="top_header">
+    <div class="container">
+        <div class="row">
+              <div class="col-sm-1 col-12">
+                  <a href="/"><img src="assets/logo.jpg" alt="logo"></a>
+              </div> <!-- End -->
+
+              <div class="col-sm-11 col-12">
+                  <div class="d-flex justify-content-end">
+                   
+
+
+                    <div *ngFor="let nav of productNavigation; let i = index" ngbDropdown class="d-inline-block mx-4">
+                      <button class="btn" routerLink="/{{nav['name']}}" [id]="nav['name']" ngbDropdownToggle>{{ nav['name'] | titlecase }} </button>
+                      <div ngbDropdownMenu [attr.aria-labelledby]="nav['name']">
+
+                        <button *ngFor="let child of nav.children; let j = index;" 
+                        routerLink="{{child['url']}}" 
+                        ngbDropdownItem>{{ child['name'] | titlecase }}</button>
+                      </div>
+                    </div>
+
+
+
+                        <nav>
+                           <ul class="nav justify-content-end">
+
+                              <li class="nav-item d-flex mx-2" style="align-items: center;">
+                                <a routerLink="/wishlist">
+                                    <span class="badge custom-badge">
+                                        Wish List <span class="badge badge-primary">  {{ wlSize }}</span>
+                                    </span> 
+                                 </a>
+                              </li>
+
+                              <li class="nav-item d-flex" style="align-items: center;">
+                                <a routerLink="/cart">
+                                    <span class="badge custom-badge">
+                                            Cart <span class="badge badge-primary">  {{ cartLength }}</span>
+                                    </span> 
+                                 </a>
+                              </li>
+
+
+                             
+                            </ul>
+                        </nav>
+                  </div> <!-- End  -->
+              </div> <!-- End row -->
+        </div> <!-- End row -->
+    </div> <!-- End container -->
+</header>
