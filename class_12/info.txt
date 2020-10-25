@@ -8,3 +8,7 @@ The static keyword defines a static method for a class. Static methods aren't ca
 
 https://www.w3schools.com/jsref/jsref_class_super.asp
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super
+
+
+
+
