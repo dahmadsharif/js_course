@@ -1,0 +1,49 @@
+show dbs;
+use blog;
+db.post.insert({"name":"tutorials point"})
+db.post.find()
+
+
+
+
+service mongod status
+
+
+db.collectionName.drop()
+db.bios.remove( { } )
+
+
+db.blogObject.deleteOne({id: 3})
+
+db.dropDatabase()
+db.collectonName.count()
+db.collectonName.find().execute("executionStatus")
+db.collectonName.dropIndexes()
+db.collectonName.getIndexes()
+db.collectonName.ensureIndex({"title":1})
+
+for(i=0; i<10000; i++) {db.roll.insert({"i": i, "username": i})}
+
+
+db.roll.ensureIndex({"username": 1})
+
+
+db.roll.find({"username" : "user101"}).explain("executionStats")
+
+
+db.roll.find({"username" : "11"}).explain()
+
+
+
+db.roll.find({}, {"_id": 0})
+
+
+
+The insertOne() operation creates both the database myNewDB and the collection myNewCollection1 if they do not already exist.
+
+sudo systemctl enable mongodb
+service mongod status
+
+ssh root@157.230.39.200
+
+157.230.39.200:3400
