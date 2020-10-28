@@ -1,0 +1,55 @@
+.cart-text {
+    text-transform: uppercase;
+    color: #666;
+    letter-spacing: 4px;
+    border-bottom: 1px solid #e8e8e8;
+    padding-bottom: 10px;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+
+.item-specific {
+    background: #f9f9f9;
+    padding: 1rem;
+    margin-bottom: 1px;
+}
+
+.item-specific:hover {
+    background: #e8f5fe;   
+}
+span.remove {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    background: #e0e0e0;
+    padding: 0.4em;
+    font-size: 0.85em;
+    display: inline-block;
+    border-radius: 100%;
+    line-height: 0.60;
+    -webkit-transition: all 0.25s linear;
+    -moz-transition: all 0.25s linear;
+    -ms-transition: all 0.25s linear;
+    -o-transition: all 0.25s linear;
+    transition: all 0.25s linear;
+    cursor: pointer
+}
+
+
+span.remove:hover {
+    background: #f30;
+    cursor: pointer
+}
+
+.item-specific input {
+    max-width: 60px;
+    border: 1px solid #dedede;
+    outline: 0;
+}
+
+.item-specific input:hover, .item-specific input:focus {
+    border: 1px solid #666;
+    outline: 0;
+}

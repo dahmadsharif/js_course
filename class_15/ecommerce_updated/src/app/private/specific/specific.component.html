@@ -1,0 +1,95 @@
+<app-header></app-header>
+<div class="container" style="min-height: 90vh; margin-top: 4rem;">
+   
+  <div *ngIf="productDetails">
+    <div class="row my-4">
+          <div class="col-sm-4 col-12">
+            <div class="card" style="width: 18rem;">
+              <div class="">
+                <a routerLink="{{ productDetails['specificUrl'] }}">
+                  <img class="card-img-top" src="{{ productDetails['images'] }}">
+                </a>
+              </div>  <!-- End img Holder -->
+              
+          </div> <!-- End card -->
+          </div> <!-- End col 4 -->
+
+
+          <div class="col-sm-8 col-12">
+              <div class="d-flex justify-content-end">
+                   <div>    
+
+
+                    <table class="table">
+
+                      <tbody>
+                        <tr>
+                            <td style="width: 120px;">
+                                Label
+                            </td>
+                            <td>
+                              {{ productDetails['cartObject']['label'] }}
+                            </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Description
+                          </td>
+                          <td [innerHTML]="productDetails['description']">>
+                            
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>Model</td>
+                          <td>{{ productDetails['model'] }}</td>
+                        </tr>
+
+
+                        <tr>
+                          <td>Category</td>
+                          <td> {{ productDetails['cartObject']["category"] | titlecase  }} </td>
+                        </tr>
+
+                        <tr>
+                          <td> Sub Category</td>
+                          <td> {{ productDetails['cartObject']["subCategory"] | titlecase  }} </td>
+                        </tr>
+
+
+                        <tr>
+                          <td> Price </td>
+                          <td> {{ productDetails['cartObject']["price"] }}
+                               {{ productDetails["currency"] }}
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td></td>
+                          <td></td>
+                        </tr>
+
+                      </tbody>
+
+                    </table>
+
+
+                    <div class="d-flex justify-content-between">
+                      <span class="btn btn-sm btn-primary cp" (click)="getIntoCart(productDetails['cartObject'])">Add To Cart</span>
+
+
+                      <span class="btn btn-sm btn-secondary cp" (click)="getIntoWishlist(productDetails['cartObject'])">Add To Wish List</span>
+                    </div>  <!-- End -->
+
+
+
+
+
+
+              </div>   <!-- End -->
+          </div> <!-- End col 8 -->
+
+        </div> <!-- End productDetails --> 
+    </div> <!-- End row -->
+</div> <!-- End container -->
+<app-footer></app-footer>
