@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Classs: 16</title>
+</head>
+<body>
+
+
+
+<script>
+	
+
+
+	class Person {
+		constructor(name, work) {
+			this.name = name;
+			this.work = work;
+		}
+
+		get city () {
+			return this.city_name;
+		}
+		set city (cityName) {
+			this.city_name = cityName;
+		}
+
+		static planet() {
+			return "Earth";
+		}
+	}
+	let madrid = new Person('Jabed', 'Student');
+		madrid.city = 'Sylhet';
+
+	console.log(madrid);
+	console.log(madrid.city);
+	console.log(Person.planet(), 'planet');
+
+
+
+
+	class Profile extends Person {
+		constructor(name, work) {
+			super(name);
+			this.work = work;
+		}
+	}
+
+	let q = new Profile('Ahmad', 'Developer');
+	console.log(q);
+	
+
+
+</script>
+</body>
+</html>
