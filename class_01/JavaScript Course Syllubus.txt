@@ -1,0 +1,296 @@
+﻿This is a draft version inspired by https://www.codecademy.com/learn/introduction-to-javascript
+
+
+
+
+
+
+—————————————————————————————————————————
+Class One
+—————————————————————————————————————————
+What is Javascript and its history and evolution ? 
+What is client side programming language
+When it is best fit ?
+Comparison to other Languages?
+What is HTTP and how it works and common HTTP method ?
+Career prospect, Salary and opportunity
+
+
+
+
+
+
+
+
+—————————————————————————————————————————
+Class Two
+—————————————————————————————————————————
+Javascript Data Type?
+String
+Number
+Array
+Object
+null
+Symbol
+
+
+Mutable and Immutable data type
+
+
+Javascript hoisting
+Let Vs var Vs const
+
+
+—————————————————————————————————————————
+Class Three
+—————————————————————————————————————————
+
+
+Introduction to JavaScript event handling.
+Working with on click and on load events.
+Working with on blur and on focus events.
+Complete form validation using JavaScript.
+Hiding and showing form sections
+
+
+Jquery
+
+
+
+
+—————————————————————————————————————————
+Class Four
+—————————————————————————————————————————
+Condition login
+JavaScript Operators
+1. If else
+2. Switch
+3. Iterators (for loop)
+
+
+
+
+—————————————————————————————————————————
+Class Five 
+—————————————————————————————————————————
+Scope 
+Hoisting
+Let vs var Vs const
+
+
+
+
+—————————————————————————————————————————
+Class Six
+—————————————————————————————————————————
+Arrow Functions (ES6)
+Function
+Use Return statement
+Difference between ordinary and Arrow function
+
+
+map, filter, reduce
+
+
+
+
+—————————————————————————————————————————
+Class Seven
+—————————————————————————————————————————
+Date Object
+1. Millisecond to Date
+2. ISO date to millisecond
+
+
+Math Object
+1. Math Floor/Ceil
+
+
+String Manipulation
+1. Remove any character
+
+
+—————————————————————————————————————————
+Class Eight
+—————————————————————————————————————————
+class,
+constructor
+prototype
+Inheritance
+override
+new
+
+
+Function Vs Class
+
+
+
+
+—————————————————————————————————————————
+Class Nine
+—————————————————————————————————————————
+Object 
+run Loop in Object 
+call(), bind() এবং apply()
+this keyword
+Regular Expression
+
+
+—————————————————————————————————————————
+Class Ten
+—————————————————————————————————————————
+Synchronous Vs Asynchronous
+Callback
+Promise
+Async Await
+
+
+—————————————————————————————————————————
+Class Eleven
+—————————————————————————————————————————
+ES6
+
+
+Destructuring
+Template Literal
+Spread
+Rest
+
+
+
+
+—————————————————————————————————————————
+Class Twelve 
+—————————————————————————————————————————
+localStorage
+Web Worker
+Web Socket
+
+
+
+
+
+
+—————————————————————————————————————————
+Class Thirteen (React)
+—————————————————————————————————————————
+React overview
+Virtual DOM
+JSX
+Props Vs state
+
+
+
+
+—————————————————————————————————————————
+Class Fifteen (React Life Cycle)
+—————————————————————————————————————————
+React Router
+Understanding Http Requests in React
+Creating a Http Request to GET Data
+
+
+
+
+
+
+
+
+
+
+—————————————————————————————————————————
+Class Fourteen  (React Life Cycle)
+—————————————————————————————————————————
+Introducing Lifecycle Methods
+Why Lifecycle Methods?
+Component Life Cycle
+
+
+
+
+React Projects
+
+
+
+
+
+
+
+
+
+
+—————————————————————————————————————————
+Class Sixteen (Form and Fetch Data)
+—————————————————————————————————————————
+Handling Form with react
+Creating Event Handlers
+Fetching Data
+Axios vs Fetch
+
+
+React Projects
+
+
+—————————————————————————————————————————
+Class Seventeen (State Management)
+—————————————————————————————————————————
+State Management
+Redux
+Action, State, Dispatch
+React Hooks
+
+
+Firebase, FireStorage, Cloudinary
+
+
+
+
+React Projects
+
+
+
+
+
+
+—————————————————————————————————————————
+Class Eighteen 
+—————————————————————————————————————————
+Connect React Firebase, FireStorage, Cloudinary
+Add, Edit, Delete,
+Document, Snapshot, Object
+Login/Signup
+
+
+
+
+
+
+
+
+Projects
+————————————————————————————
+1. Calculator
+2. Timer
+3. Clock
+4. Ecommerce Site
+5. Accounting App
+6. Fibonacci Number
+7. Search Item
+
+
+
+
+
+
+
+
+
+
+
+
+Third Part Library
+————————————————————————————
+Lodash and underscore (Utility Library)
+D3JS (Data driven Library)
+MomentJS (Date Library)
+Green Sock (For Ad)

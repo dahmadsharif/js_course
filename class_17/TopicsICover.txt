@@ -1,0 +1,15 @@
+Javascript Scope: Let , var, const
+Javascript hoisting
+Synchronous Vs Asynchronous
+Callback
+Promise
+function, class, prototype, override, super()
+JS Event, OnClick
+For Loop, If Else, Switch, Ternary
+ES6 Arrow function, map, filter, 
+How HTTP Works, Curl, Postman
+Rest API, MongoDB, NodeJS, Express
+Git, Firebase
+Angular, Routing, Service, Component
+State Management, ES6 Spread
+localStorage

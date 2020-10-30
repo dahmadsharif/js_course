@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div id="welcome" class="my-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum provident quae fuga maxime incidunt, nesciunt, veniam aspernatur maiores exercitationem harum modi iure reprehenderit voluptate rerum non beatae nisi, voluptatem nulla.
+                </div> <!-- End -->
+
+                <div>
+                    <button class="btn btn-primary">Trigger</button>
+                </div>
+            </div> <!-- End Col -->
+        </div>  <!-- End row -->
+    </div> <!-- End Container -->
+
+    <script>
+        $("#welcome").hide();
+        $("#welcome").show(1500, function() {
+            console.log('Welcome');
+        });
+
+        $(".btn").click(function() {
+            $("#welcome").toggle(1500);
+        })
+    </script>
+</body>
+</html>
