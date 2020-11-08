@@ -1,0 +1,48 @@
+https://reactjs.org/docs/hello-world.html
+https://reactjs.org/tutorial/tutorial.html
+
+https://www.taniarascia.com/getting-started-with-react/
+
+
+Recommended Courses
+
+https://reactjs.org/community/courses.html
+
+
+
+Fortunately, Facebook has created Create React App, an environment that comes pre-configured with everything you need to build a React app. It will create a live development server, use Webpack to automatically compile React, JSX, and ES6, auto-prefix CSS files, and use ESLint to test and warn about mistakes in the code.
+
+
+Create React App is very good for getting started for beginners as well as large-scale enterprise applications, but it's not perfect for every workflow. You can also create your own Webpack setup for React.
+————————————————————————————————————————————————————
+Step-1
+————————————————————————————————————————————————————
+npm install -g create-react-app
+npx create-react-app react-tutorial
+npm start
+
+————————————————————————————————————————————————————
+Install Bootstrap
+————————————————————————————————————————————————————
+
+npm install --save bootstrap
+
+
+
+————————————————————————————————————————————————————
+React Router
+————————————————————————————————————————————————————
+
+
+https://reactrouter.com/
+https://reactrouter.com/web/guides/quick-start
+
+npm install react-router-dom
+————————————————————————————————————————————————————
+Important Notes
+————————————————————————————————————————————————————
+
+JSX is actually closer to JavaScript, not HTML, so there are a few key differences to note when writing it.
+
+className is used instead of class for adding CSS classes, as class is a reserved keyword in JavaScript.
+Properties and methods in JSX are camelCase - onclick will become onClick.
