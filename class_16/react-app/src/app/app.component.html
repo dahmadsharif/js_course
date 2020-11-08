@@ -1,0 +1,25 @@
+<ul>
+  <li *ngFor="let qwkegqjwehbqkwjdbqwd of fruits; let i = index">
+    {{ qwkegqjwehbqkwjdbqwd  }}
+
+   <br> {{ i }}
+
+   <button (click)="remvoeObject(i)">Remove</button>   
+  </li>
+</ul>
+<div>
+  <input type="text" #dfdfg>
+  <button (click)="addObject(dfdfg.value)">Add</button>   
+</div>
+
+<nav>
+  <ul>
+    <li><a routerLink="/first" routerLinkActive="active">First Component</a></li>
+    <li><a routerLink="/second" routerLinkActive="active">Second Component</a></li>
+    <li><a routerLink="/fourth" routerLinkActive="active">Souumit</a></li>
+
+    fourth
+  </ul>
+</nav>
+<!-- The routed views render in the <router-outlet>-->
+<router-outlet></router-outlet>
