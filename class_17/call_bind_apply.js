@@ -10,7 +10,7 @@ var jsObj = {
    }
 }
 
-// jsObj.anotherObj.value();
+jsObj.anotherObj.value();
 
 
 

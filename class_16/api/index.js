@@ -30,7 +30,7 @@ appListen.get('/story',function(request, response) {
 	    if(err) { 
 	        console.log(err) 
 	    }
-	    response.send(JSON.stringify(data))
+	    response.send("jqworqjwoij")
 	})
 
     
