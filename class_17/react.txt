@@ -17,4 +17,5 @@ Create React App is very good for getting started for beginners as well as large
 ————————————————————————————————————————————————————
 Step-1
 ————————————————————————————————————————————————————
+npm install -g create-react-app
 npx create-react-app react-tutorial
