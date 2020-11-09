@@ -19,3 +19,4 @@ Step-1
 ————————————————————————————————————————————————————
 npm install -g create-react-app
 npx create-react-app react-tutorial
+npx create-react-app react-app
