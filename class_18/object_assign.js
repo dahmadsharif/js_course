@@ -12,3 +12,9 @@ console.log(target);
 
 console.log(returnedTarget);
 // expected output: Object { a: 1, b: 4, c: 5 }
+
+
+
+
+let obj1 = { a: 0 , b: { c: 0}};
+let obj2 = Object.assign({}, obj1);
