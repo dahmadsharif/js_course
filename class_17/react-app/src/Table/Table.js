@@ -17,6 +17,11 @@ class Table extends Component {
       })
     }
 
+    handleClick(){
+      console.log('this is:', this);
+
+    }
+
     render() {
 
       
@@ -40,10 +45,17 @@ class Table extends Component {
           ];
 
         const dlist = characters.map(function(item, i){
-          console.log('test');
           return <tr key={i}>
                   <td>{item.name}</td>
                   <td>{item.job}</td>
+                  <td>
+
+                  <button className="btn btn-primary"onClick={() => this.handleClick()}>
+                    Delete
+                  </button>
+
+                   
+                  </td>
                 </tr>
         });
 

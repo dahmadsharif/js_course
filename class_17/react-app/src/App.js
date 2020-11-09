@@ -19,8 +19,8 @@ class App extends Component {
       <Router>
          <div className="container">
        
-          <Person></Person>
-          <Table></Table>
+          
+          
    
           <nav>
             <ul>
@@ -31,7 +31,7 @@ class App extends Component {
                 <Link to="/about">About</Link>
               </li>
               <li>
-                <Link to="/users">Users</Link>
+                <Link to="/person">Person</Link>
               </li>
             </ul>
           </nav>
@@ -42,8 +42,8 @@ class App extends Component {
             <Route path="/about">
               <About />
             </Route>
-            <Route path="/users">
-              <Users />
+            <Route path="/person">
+              <Person />
             </Route>
             <Route path="/">
               <Home />
@@ -65,7 +65,7 @@ class Home extends Component {
 
 
 function About() {
-  return <h2>About</h2>;
+  return <Table></Table>;
 }
 
 function Users() {
