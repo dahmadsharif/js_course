@@ -6,6 +6,9 @@ class Person extends Component {
     state = {
         persons: []
       }
+    handleSort (index) {
+        console.log(index);
+    }
     componentDidMount() {
           axios.get(`https://jsonplaceholder.typicode.com/users`)
             .then(res => {
@@ -18,7 +21,7 @@ class Person extends Component {
         render() {
           return (
             <ul>
-              { this.state.persons.map((person, i) => <li key={i}>{person.name}</li>)}
+              { this.state.persons.map((person, i) => <li key={i} onClick={() => this.handleSort(i)}>{person.name}</li>)}
             </ul>
           )
         }

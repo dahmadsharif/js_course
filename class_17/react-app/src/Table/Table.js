@@ -2,11 +2,7 @@ import React, {Component} from 'react';
 
 class Table extends Component {
 
-  constructor() {
-    super();
-    this.changeTitle = this.changeTitle.bind(this);
-  }
-
+ 
   state = {
     title: "Learn React"
   }
@@ -17,10 +13,9 @@ class Table extends Component {
       })
     }
 
-    handleClick(){
-      console.log('this is:', this);
-
-    }
+    handleSort (index) {
+      console.log(index);
+  }
 
     render() {
 
@@ -48,11 +43,11 @@ class Table extends Component {
           return <tr key={i}>
                   <td>{item.name}</td>
                   <td>{item.job}</td>
-                  <td>
+                  <td onClick={() => this.handleSort(i)}>
 
-                  <button className="btn btn-primary"onClick={() => this.handleClick()}>
+                
                     Delete
-                  </button>
+                  
 
                    
                   </td>
@@ -64,8 +59,9 @@ class Table extends Component {
               <table className="table">
                 <thead>
                   <tr>
-                  <th>{ this.state.title } </th>
+                    <th>{ this.state.title } </th>
                     <th>Job</th>
+                    <th>Action</th>
                   </tr>
                 </thead>
                 <tbody>
