@@ -8,6 +8,8 @@ const data = {
 
 
 data.getX();
+
+
 let getDate = data.getX;
 getDate();
 

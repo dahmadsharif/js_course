@@ -1,7 +1,10 @@
 const state = {
-	count: 0 
+	count: 0,
+	fname: "Diago",
+	lname: "Maradona" 
 };
-const {count} = state;
+
+const { count, fname, lname } = state;
 console.log(count); // 0 
 
 console.log('_____________________');

@@ -41,28 +41,13 @@ class Table extends Component {
       })
   }
 
-  componentDidMount() {
-    const url =
-      'https://jsonplaceholder.typicode.com/users'
-
-    fetch(url)
-      .then((result) => result.json())
-      .then((result) => {
-        this.setState({
-          data: result,
-        })
-      })
-  }
-
-
-
     render() {
 
 
         const dlist = this.state.data.map((item, i) => {
           return <tr key={i}>
                   <td>{item.name}</td>
-                  <td>{item.email}</td>
+                  <td>{item.job}</td>
                   <td>
 
                 

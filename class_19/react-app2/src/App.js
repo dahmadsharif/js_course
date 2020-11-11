@@ -19,6 +19,10 @@ class App extends Component {
     return (
       <Router>
          <div className="container">
+       
+          
+          
+   
           <nav>
             <ul>
               <li>
@@ -26,9 +30,6 @@ class App extends Component {
               </li>
               <li>
                 <Link to="/time">Time</Link>
-              </li>
-              <li>
-                <Link to="/table">Table</Link>
               </li>
               <li>
                 <Link to="/person">Person</Link>
@@ -39,9 +40,6 @@ class App extends Component {
           {/* A <Switch> looks through its children <Route>s and
               renders the first one that matches the current URL. */}
           <Switch>
-          <Route path="/table">
-              <Table />
-            </Route>
             <Route path="/time">
               <Time />
             </Route>
@@ -62,7 +60,7 @@ class App extends Component {
 
 class Home extends Component {
   render () {
-    return <h4>Home Class</h4>;
+    return <h2>Home Class</h2>;
   }
 }
 
